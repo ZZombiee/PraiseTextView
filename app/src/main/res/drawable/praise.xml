@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@mipmap/ic_messages_like_unselected"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@mipmap/ic_messages_like_selected"
+        android:maxLevel="2"/>
+</level-list>
