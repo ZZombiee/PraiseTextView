@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zombie.app.widget.praise.PraiseTextView
+    <com.zombie.app.widget.praise_old.PraiseTextView
         android:id="@+id/ptv_test"
         android:layout_width="100dp"
         android:layout_height="100dp"

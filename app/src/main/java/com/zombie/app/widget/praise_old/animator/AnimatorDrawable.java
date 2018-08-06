@@ -1,4 +1,4 @@
-package com.zombie.app.widget.praise.animator;
+package com.zombie.app.widget.praise_old.animator;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

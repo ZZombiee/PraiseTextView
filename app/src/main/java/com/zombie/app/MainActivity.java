@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.zombie.app.utils.NumUtil;
-import com.zombie.app.widget.praise.PraiseTextView;
+import com.zombie.app.widget.praise_old.PraiseTextView;
 
 import java.util.Random;
 

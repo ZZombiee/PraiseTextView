@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawableView">
+        <attr name="labelWidth" format="dimension" />
+        <attr name="labelHeight" format="dimension" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelPadding" format="dimension" />
+        <attr name="labelOrientation">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="labelSource" format="reference" />
+        <attr name="labelTextColor" format="color|reference" />
+        <attr name="labelInitText" format="string" />
+        <attr name="labelType">
+            <enum name="centerInside" value="1" />
+            <enum name="centerCrop" value="2" />
+            <enum name="fixXY" value="3" />
+        </attr>
+        <attr name="labelGravity" format="boolean" />
+    </declare-styleable>
+</resources>

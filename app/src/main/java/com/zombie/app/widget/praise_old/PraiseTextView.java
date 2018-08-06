@@ -1,4 +1,4 @@
-package com.zombie.app.widget.praise;
+package com.zombie.app.widget.praise_old;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,7 +17,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.TextView;
 
 import com.zombie.app.utils.NumUtil;
-import com.zombie.app.widget.praise.animator.PraiseDrawable;
+import com.zombie.app.widget.praise_old.animator.PraiseDrawable;
 
 
 /**
