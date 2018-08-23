@@ -145,7 +145,7 @@ public class PraiseTextView extends TextView {
             //新数据的y轴方向位移
             float offsetNewY = startY + 2 * mTextHeight * (isAdd ? 1 : -1) * (1 - mProgress);
             //如果是增加，判断老数据的进位，如果是减少，判断新数据的进位
-            int b = carryBit(isAdd ? mOldText : mNewText);
+            int b = getCarryBitCount(isAdd ? mOldText.toString() : mNewText.toString());
             int length = isAdd ? mOldText.length() : mNewText.length();
             //画不动的部分
             CharSequence c = "";
@@ -196,5 +196,25 @@ public class PraiseTextView extends TextView {
             return carryBit(oldText);
         }
         return bit;
+    }
+    /**
+     * 获取进位数，默认是1
+     * 根据字符串的长度即可判断进位数是几位
+     * */
+    private int getCarryBitCount(String oldText){
+        if (TextUtils.isEmpty(oldText))
+            return 1;
+        try {
+            int targetNum =  (Integer.valueOf(oldText)) + 1;
+            int targetLength = String.valueOf(targetNum).length();
+            if (targetLength > oldText.length()){
+                return targetLength -1;
+            }else if (targetLength == oldText.length()) {
+                return 1;
+            }
+        }catch (NumberFormatException e){
+            return 1;
+        }
+        return 1;
     }
 }
